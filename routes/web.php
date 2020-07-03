@@ -13,29 +13,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('homes');
-});
+// Route::get('/', function () {
+//     return view('homes');
+// });
+Route::resource('/', 'AccueilController');
+Route::resource('/services', 'ServiceController');
+Route::resource('/blog', 'BlogController');
+Route::resource('/blogpost', 'BlogPostController');
+Route::resource('/element', 'ElementController');
+Route::resource('/contact', 'ContactController');
 
-Route::get('/services', function () {
-    return view('services');
-});
+// Route::get('/services', function () {
+//     return view('services');
+// });
 
-Route::get('/blog', function () {
-    return view('blog');
-});
+// Route::get('/blog', function () {
+//     return view('blog');
+// });
 
-Route::get('/blogpost', function () {
-    return view('blogpost');
-});
+// Route::get('/blogpost', function () {
+//     return view('blogpost');
+// });
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+// Route::get('/contact', function () {
+//     return view('contact');
+// });
 
-Route::get('/element', function () {
-    return view('element');
-});
+// Route::get('/element', function () {
+//     return view('element');
+// });
 
 Auth::routes();
 
