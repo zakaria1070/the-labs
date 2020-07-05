@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Blog;
+use App\NavTitre;
 use Illuminate\Http\Request;
+
 
 class BlogController extends Controller
 {
@@ -14,7 +16,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        return view('blog');
+        $navtitre = NavTitre::all();
+        return view('blog',compact('navtitre'));
     }
 
     /**

@@ -1,6 +1,7 @@
-@extends('adminlte::page')
+@extends('templates.index')
 
-@section('title', 'AdminLTE')
+@include('templates.head')
+@include('templates.nav')
 
 @section('content_header')
     <h1 class="m-0 text-dark">Dashboard</h1>
@@ -17,3 +18,6 @@
         </div>
     </div>
 @stop
+
+@include('templates.footer')
+@include('templates.javascript')

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAccueilsTable extends Migration
+class CreateNavTitresTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateAccueilsTable extends Migration
      */
     public function up()
     {
-        Schema::create('accueils', function (Blueprint $table) {
+        Schema::create('nav_titres', function (Blueprint $table) {
             $table->id();
-
-
+            $table->string('title');
+            $table->string('url');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateAccueilsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('accueils');
+        Schema::dropIfExists('nav_titres');
     }
 }

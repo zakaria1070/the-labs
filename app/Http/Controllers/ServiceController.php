@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Service;
+use App\NavTitre;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
@@ -14,7 +15,8 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        return view('services');
+        $navtitre = NavTitre::all();
+        return view('services',compact('navtitre'));
     }
 
     /**
