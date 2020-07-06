@@ -16,5 +16,6 @@ class DatabaseSeeder extends Seeder
         $this->call(NavTitreSeeder::class);
         $this->call(NavLogoSeeder::class);
         $this->call(CardHomeSeeder::class);
+        $this->call(AboutHomeSeeder::class);
     }
 }

@@ -22,7 +22,8 @@ class CardHomeSeeder extends Seeder
             "logo" => "flaticon-011-compass",
             "titre" => "Projects online",
             "paraph" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id,suscipit id nulla.."
-        ]);
+            // 
+            ]);
 
         DB::table('card_homes')->insert([
             "logo" => "flaticon-037-idea",
