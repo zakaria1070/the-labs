@@ -10,6 +10,7 @@
     <nav>
         <ul class="menu-list">
             @foreach ($navtitre as $item)
+            {{-- titre et lien de la navbar --}}
         <li><a href="{{$item->url}}"> {{$item->title}} </a></li>
                
            @endforeach

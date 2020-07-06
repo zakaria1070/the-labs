@@ -3,7 +3,8 @@
     <div class="hero-content">
         <div class="hero-center">
             @foreach ($navlogo as $item)
-            <img src="{{$item->logo}}" alt="">
+            {{-- img navbar change celle-ci aussi --}}
+            <img src="{{$item->logo}}" alt=""> {{-- logo--}}
             <p>Get your freebie template now!</p>
             @endforeach
         </div>
