@@ -2,22 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\AboutHome;
-use App\Accueil;
-use App\CardHome;
-use App\Contact;
-use App\Footer;
-use App\NavLogo;
-use App\NavTitre;
-use App\PromotionHome;
-use App\Service;
-use App\TeamHome;
-use App\Testi;
 use App\Titre;
-use App\Video;
 use Illuminate\Http\Request;
 
-class AccueilController extends Controller
+class TitreController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -26,19 +14,7 @@ class AccueilController extends Controller
      */
     public function index()
     {
-        $navtitre = NavTitre::all();
-        $navlogo = NavLogo::all();
-        $cardhome = CardHome::all();
-        $abouthome = AboutHome::all();
-        $videos = Video::first();
-        $testis = Testi::all();
-        $services = Service::all();
-        $teams = TeamHome::all();
-        $promotions = PromotionHome::first();
-        $contacts = Contact::first();
-        $footers = Footer::first();
-        $titres = Titre::first();
-        return view('homes',compact('navtitre','navlogo','cardhome','abouthome','videos','testis','services','teams','promotions','contacts','footers','titres'));
+        //
     }
 
     /**
@@ -65,10 +41,10 @@ class AccueilController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Accueil  $accueil
+     * @param  \App\Titre  $titre
      * @return \Illuminate\Http\Response
      */
-    public function show(Accueil $accueil)
+    public function show(Titre $titre)
     {
         //
     }
@@ -76,10 +52,10 @@ class AccueilController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Accueil  $accueil
+     * @param  \App\Titre  $titre
      * @return \Illuminate\Http\Response
      */
-    public function edit(Accueil $accueil)
+    public function edit(Titre $titre)
     {
         //
     }
@@ -88,10 +64,10 @@ class AccueilController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Accueil  $accueil
+     * @param  \App\Titre  $titre
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Accueil $accueil)
+    public function update(Request $request, Titre $titre)
     {
         //
     }
@@ -99,10 +75,10 @@ class AccueilController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Accueil  $accueil
+     * @param  \App\Titre  $titre
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Accueil $accueil)
+    public function destroy(Titre $titre)
     {
         //
     }

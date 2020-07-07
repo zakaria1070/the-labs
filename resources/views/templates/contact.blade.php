@@ -5,7 +5,7 @@
 				<!-- contact info -->
 				<div class="col-md-5 col-md-offset-1 contact-info col-push">
 					<div class="section-title left">
-						<h2>Contact us</h2>
+						<h2>{{$titres->titre6}}</h2>
 					</div>
 					<p> {{$contacts->paraf}} </p>
 					<h3 class="mt60">{{$contacts->titre}}</h3>

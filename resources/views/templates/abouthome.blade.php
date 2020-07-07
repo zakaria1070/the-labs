@@ -5,7 +5,7 @@
 				@foreach ($abouthome as $item)
 					
 				<div class="section-title">
-					<h2>{!! str_replace('(', '<span>', str_replace(')', '</span>', $item->titre)) !!}</h2>
+					<h2>{!! str_replace('(', '<span>', str_replace(')', '</span>', $titres->titre1)) !!} </h2>
 					
 				</div>
 				<div class="row">

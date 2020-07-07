@@ -15,7 +15,7 @@ class CreateAboutHomesTable extends Migration
     {
         Schema::create('about_homes', function (Blueprint $table) {
             $table->id();
-            $table->string('titre');
+            // $table->string('titre');
             $table->string('parafun',500);
             $table->string('parafdeux', 500);
             $table->string('bouton');

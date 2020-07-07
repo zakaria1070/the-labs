@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
         $this->call(PromotionHomeSeeder::class);
         $this->call(ContactSeeder::class);
         $this->call(FooterSeeder::class);
+        $this->call(TitreSeeder::class);
     
     
     }

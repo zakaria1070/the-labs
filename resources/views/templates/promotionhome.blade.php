@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-            <h2>{{$promotions->titre}}</h2>
+            <h2>{{$titres->titre5}}</h2>
                 <p>{{$promotions->paraf}}</p>
             </div>
             <div class="col-md-3">

@@ -13,7 +13,7 @@ class PromotionHomeSeeder extends Seeder
     public function run()
     {
         DB::table('promotion_homes')->insert([
-            'titre'=>"Are you ready to stand out?",
+            // 'titre'=>"Are you ready to stand out?",
             'paraf'=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est.",
             'bouton'=>"Browse",
         ]);

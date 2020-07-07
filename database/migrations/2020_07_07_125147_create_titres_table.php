@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePromotionHomesTable extends Migration
+class CreateTitresTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,14 @@ class CreatePromotionHomesTable extends Migration
      */
     public function up()
     {
-        Schema::create('promotion_homes', function (Blueprint $table) {
+        Schema::create('titres', function (Blueprint $table) {
             $table->id();
-            // $table->string('titre');
-            $table->string('paraf');
-            $table->string('bouton');
+            $table->string('titre1');
+            $table->string('titre2');
+            $table->string('titre3');
+            $table->string('titre4');
+            $table->string('titre5');
+            $table->string('titre6');
             $table->timestamps();
         });
     }
@@ -29,6 +32,6 @@ class CreatePromotionHomesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('promotion_homes');
+        Schema::dropIfExists('titres');
     }
 }
