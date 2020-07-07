@@ -7,14 +7,18 @@
 			</div>
 			<div class="row">
 				<!-- single member -->
+				@foreach ($teams as $item)
+					
 				<div class="col-sm-4">
 					<div class="member">
-						<img src="img/team/1.jpg" alt="">
-						<h2>Christinne Williams</h2>
-						<h3>Project Manager</h3>
+					<img src="{{$item->image}}" alt="">
+						<h2>{{$item->nom}}</h2>
+						<h3>{{$item->post}}</h3>
 					</div>
 				</div>
-				<!-- single member -->
+				@endforeach
+
+				{{-- <!-- single member -->
 				<div class="col-sm-4">
 					<div class="member">
 						<img src="img/team/2.jpg" alt="">
@@ -29,7 +33,7 @@
 						<h2>Christinne Williams</h2>
 						<h3>Digital designer</h3>
 					</div>
-				</div>
+				</div> --}}
 			</div>
 		</div>
 	</div>
