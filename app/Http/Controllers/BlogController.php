@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Blog;
+use App\NavLogo;
 use App\NavTitre;
 use Illuminate\Http\Request;
 
@@ -17,7 +18,8 @@ class BlogController extends Controller
     public function index()
     {
         $navtitre = NavTitre::all();
-        return view('blog',compact('navtitre'));
+        $navlogo = NavLogo::all();
+        return view('blog',compact('navtitre','navlogo'));
     }
 
     /**

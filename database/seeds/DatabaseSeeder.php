@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CardHomeController;
+use App\TestimonialHome;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -17,5 +18,7 @@ class DatabaseSeeder extends Seeder
         $this->call(NavLogoSeeder::class);
         $this->call(CardHomeSeeder::class);
         $this->call(AboutHomeSeeder::class);
+        $this->call(VideoSeeder::class);
+        $this->call(TestiSeeder::class);
     }
 }

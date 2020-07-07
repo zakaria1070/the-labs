@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\NavLogo;
 use App\Service;
 use App\NavTitre;
 use Illuminate\Http\Request;
@@ -16,7 +17,8 @@ class ServiceController extends Controller
     public function index()
     {
         $navtitre = NavTitre::all();
-        return view('services',compact('navtitre'));
+        $navlogo = NavLogo::all();
+        return view('services',compact('navtitre','navlogo'));
     }
 
     /**

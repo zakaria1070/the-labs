@@ -17,21 +17,26 @@
 					</div>
 				</div>
 				<div class="text-center mt60">
-					<a href="" class="site-btn"> {{$item->bouton}} </a>
+				<a href="{{$item->lien}}" class="site-btn"> {{$item->bouton}} </a>
 				</div>
 				@endforeach
 
 				<!-- popup video -->
+				@foreach ($videos as $item)
+					
 				<div class="intro-video">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2">
 							<img src="img/video.jpg" alt="">
-							<a href="https://www.youtube.com/watch?v=JgHfx2v9zOU" class="video-popup">
+							<a href="{{$item->lien}}" class="video-popup">
 								<i class="fa fa-play"></i>
 							</a>
 						</div>
 					</div>
+
+					@endforeach
 				</div>
+
 			</div>
 		</div>
 	</div>

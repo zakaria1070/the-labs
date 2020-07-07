@@ -7,6 +7,8 @@ use App\Accueil;
 use App\CardHome;
 use App\NavLogo;
 use App\NavTitre;
+use App\Testi;
+use App\Video;
 use Illuminate\Http\Request;
 
 class AccueilController extends Controller
@@ -22,7 +24,9 @@ class AccueilController extends Controller
         $navlogo = NavLogo::all();
         $cardhome = CardHome::all();
         $abouthome = AboutHome::all();
-        return view('homes',compact('navtitre','navlogo','cardhome','abouthome'));
+        $videos = Video::all();
+        $testis = Testi::all();
+        return view('homes',compact('navtitre','navlogo','cardhome','abouthome','videos','testis'));
     }
 
     /**

@@ -2,13 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Contact;
-use App\NavLogo;
-use App\NavTitre;
-
+use App\Video;
 use Illuminate\Http\Request;
 
-class ContactController extends Controller
+class VideoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,9 +14,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        $navtitre = NavTitre::all();
-        $navlogo = NavLogo::all();
-        return view('contact',compact('navtitre','navlogo'));
+        //
     }
 
     /**
@@ -46,10 +41,10 @@ class ContactController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Contact  $contact
+     * @param  \App\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function show(Contact $contact)
+    public function show(Video $video)
     {
         //
     }
@@ -57,10 +52,10 @@ class ContactController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Contact  $contact
+     * @param  \App\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function edit(Contact $contact)
+    public function edit(Video $video)
     {
         //
     }
@@ -69,10 +64,10 @@ class ContactController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Contact  $contact
+     * @param  \App\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Contact $contact)
+    public function update(Request $request, Video $video)
     {
         //
     }
@@ -80,10 +75,10 @@ class ContactController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Contact  $contact
+     * @param  \App\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Contact $contact)
+    public function destroy(Video $video)
     {
         //
     }
