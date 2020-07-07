@@ -7,11 +7,11 @@
 					<div class="section-title left">
 						<h2>Contact us</h2>
 					</div>
-					<p>Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum. </p>
-					<h3 class="mt60">Main Office</h3>
-					<p class="con-item">C/ Libertad, 34 <br> 05200 Arévalo </p>
-					<p class="con-item">0034 37483 2445 322</p>
-					<p class="con-item">hello@company.com</p>
+					<p> {{$contacts->paraf}} </p>
+					<h3 class="mt60">{{$contacts->titre}}</h3>
+					<p class="con-item">{{$contacts->adresse}} <br> {{$contacts->adresse2}} </p>
+					<p class="con-item">{{$contacts->phone}}</p>
+					<p class="con-item">{{$contacts->email}}</p>
 				</div>
 				<!-- contact form -->
 				<div class="col-md-6 col-pull">
@@ -26,7 +26,7 @@
 							<div class="col-sm-12">
 								<input type="text" name="subject" placeholder="Subject">
 								<textarea name="message" placeholder="Message"></textarea>
-								<button class="site-btn">send</button>
+								<a href="{{$contacts->url}}"><button class="site-btn">{{$contacts->bouton}}</button></a>
 							</div>
 						</div>
 					</form>

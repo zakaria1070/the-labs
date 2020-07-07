@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\AboutHome;
 use App\Accueil;
 use App\CardHome;
+use App\Contact;
 use App\NavLogo;
 use App\NavTitre;
 use App\PromotionHome;
@@ -32,7 +33,8 @@ class AccueilController extends Controller
         $services = Service::all();
         $teams = TeamHome::all();
         $promotions = PromotionHome::first();
-        return view('homes',compact('navtitre','navlogo','cardhome','abouthome','videos','testis','services','teams','promotions'));
+        $contacts = Contact::first();
+        return view('homes',compact('navtitre','navlogo','cardhome','abouthome','videos','testis','services','teams','promotions','contacts'));
     }
 
     /**

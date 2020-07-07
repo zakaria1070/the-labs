@@ -1,5 +1,6 @@
 <?php
 
+use App\Contact;
 use App\Http\Controllers\CardHomeController;
 use App\TestimonialHome;
 use Illuminate\Database\Seeder;
@@ -23,6 +24,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ServiceSeeder::class);
         $this->call(TeamHomeSeeder::class);
         $this->call(PromotionHomeSeeder::class);
+        $this->call(ContactSeeder::class);
     
     
     }
