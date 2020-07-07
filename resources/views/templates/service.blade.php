@@ -6,18 +6,22 @@
 			</div>
 			<div class="row">
 				<!-- single service -->
+				@foreach ($services as $item)
+					
 				<div class="col-md-4 col-sm-6">
 					<div class="service">
 						<div class="icon">
-							<i class="flaticon-023-flask"></i>
+							<i class=" {{$item->logo}} "></i>
 						</div>
 						<div class="service-text">
-							<h2>Get in the lab</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla..</p>
+							<h2>{{$item->titre}}</h2>
+							<p>{{$item->paraf}}</p>
 						</div>
 					</div>
 				</div>
-				<!-- single service -->
+				@endforeach
+
+				{{-- <!-- single service -->
 				<div class="col-md-4 col-sm-6">
 					<div class="service">
 						<div class="icon">
@@ -112,7 +116,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla..</p>
 						</div>
 					</div>
-				</div>
+				</div> --}}
 			</div>
 			<div class="text-center">
 				<a href="" class="site-btn">Browse</a>
